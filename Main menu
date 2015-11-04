@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="BackgroundTest.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+<h1>Fruit Blasters</h1>
+
+
+    <img id="Play" onclick="changeImage()" src="BlackPowerButton.png" width=120 height="120">   
+      
+    
+   
+<script>
+function changeImage() {
+    var image = document.getElementById('Play');
+    if (image.src.match("BlackPowerButton")) {
+        image.src = "PlayButton1.png";
+    } else {
+        image.src = "BlackPowerButton.png";
+    }
+   
+
+}
+</script>
+
+</body>
+</html>
