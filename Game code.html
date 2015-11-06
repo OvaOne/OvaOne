@@ -58,6 +58,13 @@ game.add.sprite(0,0, ‘sky’);
 
 platforms.enableBody = true;
 var ground = platforms.create
+ player = game.add.sprite(32, game.world.height - 150, 'FemaleAvatar' 'MaleAvatar');
+
+    cursors = game.input.keyboard.createCursorKeys();
+    
+    game.physics.arcade.enable(player);
+
+
 enemies = [];
 
     enemiesTotal = 20;
