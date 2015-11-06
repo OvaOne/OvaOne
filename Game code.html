@@ -58,8 +58,14 @@ game.add.sprite(0,0, ‘sky’);
 
 platforms.enableBody = true;
 var ground = platforms.create
+enemies = [];
 
+    enemiesTotal = 20;
+    enemiesAlive = 20;
 
+    for (var i = 0; i < enemiesTotal; i++)
+}
 
-
-
+function update() {
+ game.physics.arcade.collide(player, platforms);
+ 
